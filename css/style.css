@@ -1,0 +1,540 @@
+@charset "utf-8";
+
+html,body {
+    overflow-x: hidden;
+  }
+html {
+    font-size: 100%;
+}
+/* google-font */
+.zen-kaku-gothic-new-medium {
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+body {
+    line-height: 1.5;
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-weight: bold;
+    color: #2E3330;
+}
+img {
+    width: 100%;
+    max-width: 100%;
+}
+* {
+    box-sizing: border-box;
+  }
+
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+/* 共通 */
+.title {
+    font-size: 32px;
+    padding: 32px 0;
+}
+
+/* ファーストビュー */
+.fv {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(180deg, rgba(2, 99, 196, 0.40) 0%, #00AED6 100%);
+    position: relative;
+}
+.fv::before {
+    content: "";
+    background-image: url(../images/fv-wave-white.png);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 30%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+/* ヘッダー */
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.header-inner {
+    display: flex;
+    align-items: center;
+    padding: 0 2.5%;
+}
+/* ヘッダーロゴ */
+.header-logo {
+    width: 246px;
+    height: 189px;
+    padding-top: 32px;
+}
+.head-logo a{
+    display: block;
+}
+.head-logo a:hover {
+    opacity: 0.7;
+}
+/* ナビゲーション */
+.header-nav {
+    margin-left: auto;
+}
+.nav-menu {
+    background-color: #fff;
+    padding: 16px 40px;
+    border-radius: 50px;
+    display: flex;
+}
+.nav-menu li + li {
+    margin-left: 64px;
+}
+.nav-menu a {
+    color: #2E3330;
+}
+.nav-menu a:hover {
+    opacity: 0.7;
+}
+/* ハンバーガーボタン */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    background: transparent;
+}
+.hamburger div {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+.hamburger div:first-child {
+    transform: translate(-50%, -10px);
+}
+.hamburger div:nth-child(2) {
+    transform: translate(-50%, -50%);
+}
+.hamburger div:last-child {
+    transform: translate(-50%, 7px);
+}
+
+/* メインビジュアル */
+.catchphrase {
+    position: absolute;
+    top: 21%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+}
+.catchphrase img {
+    height: 614px;
+}
+
+/* コンテンツ */
+/* .container {
+    background-color: #00AED6;
+} */
+
+/* about */
+.about {
+    background-color: #fff;
+    width: 100%;
+    height: 495px;
+    margin-inline: auto;
+    position: relative;
+}
+.about::before {
+    content: "";
+    background-image: url(../images/kodawari-wave-blue.png);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 44%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.about-inner {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 32px;
+}
+.about-left {
+    padding-left: 14%;
+    width: 60%;
+}
+.about-left .title {
+    color: #0263C4;
+}
+.about-text {
+    padding-bottom: 32px;
+}
+.about-right {
+    position: absolute;
+    top: -184px;
+    right: 10%;
+    z-index: 1;
+}
+
+/* kodawari */
+.kodawari {
+    width: 100%;
+    background-color: #00AED6;
+    margin-inline: auto;
+    position: relative;
+    color: #fff;
+    padding-bottom: 8px;
+}
+.kodawari::before {
+    content: "";
+    background-image: url(../images/lineup-wave-blue.png);
+    position: absolute;
+    bottom: -68%;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 68%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.kodawari-inner {
+    display: flex;
+    justify-content: space-between;
+}
+.kodawari-left {
+    padding-left: 16%;
+}
+.kodawari-right {
+    padding-right: 8%;
+}
+
+/* ラインナップ */
+.lineup {
+    background-color: #fff;
+    width: 100%;
+    height: 755px;
+    margin-inline: auto;
+    position: relative;
+    color: #0263C4;
+}
+.lineup-inner {
+    display: flex;
+    align-items: center;
+    padding-top: 262px;
+}
+.lineup-left {
+    padding-left: 7%;
+    padding-right: 7%;
+} 
+.button {
+    margin-top: 64px;
+    min-width: 256px;
+}
+.button:hover {
+    opacity: 0.7;
+}
+.button a{
+    background-color: #0263C4;
+    padding: 0.5em 1.5em;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 32px;
+    white-space: nowrap   
+}
+/* スライダー */
+.swiper {
+    width: 70%; 
+}
+.swiper-slide:last-child {
+    margin-right: 0;
+}
+.swiper-slide img {
+    width: 232px;
+}
+
+/* 矢印カスタマイズ */
+.swiper-button-prev,
+.swiper-button-next {
+  height: 66px;
+  width: 66px;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  height: 50px;
+  margin: auto;
+  width: 50px;
+}
+.swiper-button-prev::after {
+    background-image: url(../images/arrow-left.png);
+  }
+.swiper-button-next::after {
+    background-image: url(../images/arrow-right.png);
+  }
+
+/* もっとエコスプラッシュを楽しもう */
+.more {
+    background-image: url(../images/water-surface.jpg);
+    background-image: image-set(url(../images/water-surface.jpg) 1x url(../images/water-surface@2x.jpg) 2x);
+    background-image: -webkit-image-set(url(../images/water-surface.jpg) 1x url(../images/water-surface@2x.jpg) 2x);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 780px;
+    width: 100%;
+    position: relative;
+}
+.more::before {
+    content: "";
+    background-image: url(../images/more-wave-white.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 32%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.more::after {
+    content: "";
+    background-image: url(../images/more-wave-blue.png);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 37%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.more-inner {
+    padding-top: 280px;
+    padding-left: 14%;
+}
+.more-inner .title {
+    color:#0263C4;
+}
+/* footer */
+.footer {
+    width: 100%;
+    margin-inline: auto;
+    position: relative;
+    color: #fff;
+    background-color: #00AED6;
+}
+.footer-inner {
+    padding-bottom: 71px;
+}
+.footer-logo  {
+    padding: 32px 0 32px 32px;
+    width: 149px;
+}
+.copyright {
+    margin-left: 32px;
+}
+/* トップページに戻るボタン */
+.gotop {
+    position: fixed;
+    z-index: 999;
+    bottom: 32px;
+    right: 56px;
+    opacity: 0;
+    visibility: hidden;
+}
+.gotop.active {
+    opacity: 1;
+    visibility: visible;
+}
+.gotop a img{
+    width: 60px;
+    height: 60px;
+}
+
+/* メディアクエリ */
+/* 600以下 */
+@media (max-width: 600px){
+    /* ファーストビュー */
+    .fv::before {
+        height: 15%;
+    }
+    /* ヘッダー */
+    .header-inner {
+        padding: 0 5%;
+    }
+    /* ヘッダーロゴ */
+    .header-logo {
+        width: 147px;
+        height: 113px;
+    }
+    /* ナビゲーション */
+    .nav-menu {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        background: #00CFFF;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        color: #fff;
+        opacity: 0;
+        z-index: 2;
+        pointer-events: none;
+        transition: .4s;
+    }
+    .nav-menu.active {
+        opacity: 1;
+        pointer-events: auto;
+    }
+    .nav-menu li:first-child {
+        margin-top: 144px;
+    }
+    .nav-menu li + li {
+        margin-left: 0;
+        margin-top: 56px;
+    }
+    .nav-menu a {
+        color: #fff;
+    }
+
+    /* ハンバーガーボタン */
+    .hamburger {
+        z-index: 3;
+        display: block;
+    }
+    .hamburger div {
+        transition: .4s;
+    }
+    .active div:first-child {
+        transform: translate(-50%, 50%) rotate(45deg);
+    }
+    .active div:nth-child(2) {
+        transform: translate(-50%, 50%);
+        opacity: 0;
+    }
+    .active div:last-child {
+        transform: translate(-50%, 50%) rotate(-45deg);
+    }
+
+    /* メインビジュアル */
+    .catchphrase {
+        position: absolute;
+        top: 21%;
+        right: 11%;
+        left: 14%;
+        margin: 0 auto;
+    }
+
+    /* about */
+    .about {
+        height: 834px;
+    }
+    .about::before {
+        height: 12%;
+    }
+    .about-inner {
+        flex-direction: column;
+    }
+    .about-left {
+        padding: 0 7%;
+        width: 100%;
+    }
+    .about-text {
+        text-align: center;
+    }
+    .about-right {
+        position:static;
+        margin-top: 24px;
+        padding: 0 18.6%;
+    }
+
+    /* kodawari */
+    .kodawari {
+        padding-bottom: 8px;
+    }
+    .kodawari::before {
+        bottom: -18%;
+        height: 18%;
+    }
+    .kodawari-inner {
+        flex-direction: column;
+    }
+    .kodawari-left {
+        margin-top: 56px;
+        padding: 0 20%;
+        order: 1;
+    }
+    .kodawari-right {
+        padding: 0 8.6%;
+    }
+
+    /* ラインナップ */
+    .lineup {
+        height: 789px;
+    }
+    .lineup-inner {
+        flex-direction: column;
+        padding-top: 106px;
+    }
+    .lineup-left {
+        padding-left: 4%;
+        padding-right: 4%;
+        text-align: center;
+    } 
+    .button {
+        margin-top: 32px;
+        min-width: 552px;
+        max-width: 100%;
+    }    
+    .button a{
+        padding: 0.5em 3em;
+    }
+    /* スライダー */
+    .swiper {
+        width: 100%;
+        padding: 0 4%; 
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+
+    /* もっとエコスプラッシュを楽しもう */
+    .more {
+        height: 700px;
+    }
+    .more::before {
+        height: 18%;
+    }
+    .more::after {
+        height: 20%;
+    }
+    .more-inner {
+        padding: 100px 4% 167px 4%;
+    }
+
+    /* フッター */
+    .footer-inner {
+        padding-bottom: 71px;
+    }
+    .footer-logo  {
+        padding: 32px 0;
+        margin: 0 auto;
+        width: 149px;
+    }
+    .copyright {
+        margin-left: 0;
+        text-align: center;
+    }
+}

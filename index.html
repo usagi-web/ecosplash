@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ecosplash</title>
+    <!-- reset.css ress-->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <!-- swiper -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <!-- style.css-->
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+    <!-- google-font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+</head>
+
+<body id="body">
+    <!-- ファーストビュー -->
+    <div class="fv">
+        <!-- ヘッダー -->
+        <header id="header">
+            <div class="header-inner">
+                <!-- ヘッダーロゴ -->
+                <h1 class="header-logo">
+                    <a href="index.html">
+                        <img src="images/LOGO.png" alt="エコスプラッシュ">
+                    </a>
+                </h1>
+                <!-- ナビゲーション -->
+                <nav class="header-nav">
+                    <ul class="nav-menu">
+                        <li><a href="#about">商品紹介</a></li>
+                        <li><a href="#kodawari">こだわり</a></li>
+                        <li><a href="#lineup">ラインナップ</a></li>
+                    </ul>
+                    <!-- ハンバーガーボタン -->
+                    <div class="hamburger">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <!-- メインビジュアル -->
+        <main class="MV">
+            <h2 class="catchphrase">
+                <img src="images/mv-img.svg" alt="輝くような清潔さ毎日を活気に満たす">
+            </h2>
+        </main>
+    </div>
+
+    <!-- コンテンツ -->
+    <div class="container">
+        
+        <!-- about -->
+        <div id="about" class="about">
+            <div class="about-inner">
+                <div class="about-left">
+                    <h2 class="title">エコスプラッシュの世界へようこそ</h2>
+                    <div class="about-text">
+                        <p>
+                            エコスプラッシュの水は、自然の恵みを凝縮した究極の飲料水です。
+                            <br>
+                            遠く、自然がまだ純粋な地で育まれたこの水は、
+                            <br>
+                            その純粋さと豊かなミネラル成分で知られています。
+                            <br>
+                            水源地から慎重に選ばれた水は, 最高水準の清潔さと安全性を保証します。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="about-right">
+                    <picture>
+                        <source srcset="images/about-img-sp.png" alt="" media="(max-width: 600px)"> 
+                        <source srcset="images/about-img.png" alt="" media="(min-width: 601px)"> 
+                        <img src="images/about-img.png" alt="">
+                    </picture>
+                        
+                </div>
+            </div>
+        </div>
+
+        <!-- こだわり -->
+        <div id="kodawari" class="kodawari">
+            <div class="kodawari-inner">
+                <div class="kodawari-left">
+                    <img src="images/kodawari-img.png">
+                </div>
+
+                <div class="kodawari-right">
+                    <h2 class="title">エコスプラッシュのこだわり</h2>
+                    <div class="kodawari-text">
+                        <p>
+                            エコスプラッシュでは、水に対するこだわりは常に最優先です。
+                            <br>
+                            私たちは自然の恵みを受け継ぎ、その美しさと純粋さを保ちながら、
+                            <br>
+                            お客様に最高品質の飲料水を提供することに誇りを持っています。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ラインアップ -->
+        <div id="lineup">
+            <div class="lineup-inner">
+                <div class="lineup-left">
+                    <h2 class="title">商品ラインナップ</h2>
+                    <div class="button"><a href="#">詳細をみる</a></div>
+                </div>
+
+                <!-- スライダー -->
+                <div class="swiper">
+                    <!-- スライダーのコンテナ -->
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="images/PETbottles.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/PETbottles-G.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/aluminum-cans-big.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/aluminum-cans-small.png" alt="">
+                        </div>
+                      </div>
+                    <!-- スライダーのコンテナここまで -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>   
+                <!-- スライダーここまで -->
+            </div>
+        </div>
+
+        <!-- もっとエコスプラッシュを楽しもう -->
+        <div class="more">
+            <div class="more-inner">
+                <h2 class="title">もっとエコスプラッシュを楽しもう</h2>
+                <p class="more-text">
+                    もっとエコスプラッシュを楽しむために、あなたも参加しませんか？
+                    <br>
+                    私たちの製品は、あなたの日常に健康と活力をもたらし、自然の美しさを感じる機会を提供します。
+                    <br>
+                    清らかな水の恵みを味わい、毎日を穏やかで豊かなものに変えましょう。
+                    <br>
+                    私たちは、あなたの健康と幸福を最優先に考えています。
+                    <br>
+                    もっとエコスプラッシュを楽しむための素晴らしい旅を一緒にしましょう。
+                    <br>
+                    あなたのお越しを心からお待ちしています。
+                </p>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="footer-inner">
+                <div class="footer-logo">
+                    <img src="images/LOGO.png" alt="エコスプラッシュ">
+                </div>
+                <p class="copyright">© 2024 eco splash</p>
+
+                <!-- トップページに戻るボタン -->
+                <div class="gotop">
+                    <a href="#body">
+                        <img src="images/toppage-btn.svg">
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+     
+    <!-- jquery読み込み -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
